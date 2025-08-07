@@ -28,6 +28,7 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 - Docker
 - Maven
 - JUnit & Mockito (para pruebas)
+- Lombok
 
 ---
 
