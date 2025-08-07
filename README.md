@@ -44,7 +44,7 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 
 ## Para ingresar a Swagger
-![Imagen de swagger](images/swagger.png)
+![Imagen de swagger](imagenes/swagger.png)
 - http://localhost:8080/swagger-ui/index.html
 
 
