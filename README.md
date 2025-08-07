@@ -3,8 +3,11 @@
 API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokeapi.co/) y devuelve información simplificada en formato JSON. Además, guarda un historial de búsquedas en una base de datos H2 en memoria.
 
 ---
+
 ## Tiempo en el que se completo
 - 4hr y 30 min
+- 
+---
 
 ## Características
 
