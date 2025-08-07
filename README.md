@@ -30,34 +30,34 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 ### Clona el proyecto
 
-bash/terminal
-git clone https://github.com/tu_usuario/PokemonAPI.git
-cd PokemonAPI
+- bash/terminal
+- git clone https://github.com/CristianARAMOS/PokemonAPI.git
+- cd PokemonAPI
 
 ### Ejecutar con maven 
-mvn spring-boot:run
+- mvn spring-boot:run
 
 ## Compilar y generar el contenerdor Docker
-mvn clean package 
-docker build -t pokemonapi:latest .
-docker run -p 8080:8080 pokemonapi:latest
+- mvn clean package 
+- docker build -t pokemonapi:latest .
+- docker run -p 8080:8080 pokemonapi:latest
 
 
 ## Para ingresar a Swagger
-http://localhost:8080/swagger-ui/index.html
+- http://localhost:8080/swagger-ui/index.html
 
 
 ## Para poder ingresar a H2 Console DB
-http://localhost:8080/h2-console
-Configuración
-JDBC URL: jdbc:h2:mem:db
-Usuario: admin
-Contraseña: (vacío)
+-http://localhost:8080/h2-console
+- Configuración
+- JDBC URL: jdbc:h2:mem:db
+- Usuario: admin
+- Contraseña: (vacío)
 
 
 ## Ejemplo haciendo una solicitud con nombre pokemon = pikachu 
 
-GET http://localhost:8080/pokemon/pikachu
+- GET http://localhost:8080/pokemon/pikachu
 
 
 
