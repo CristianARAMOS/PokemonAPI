@@ -5,7 +5,7 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 ---
 ## Tiempo en el que se completo
 - 4hr y 30 min
-- 
+
 ## Características
 
 - Consulta datos de cualquier Pokémon desde `/pokemon/{nombre}`
