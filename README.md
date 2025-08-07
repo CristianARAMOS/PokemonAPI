@@ -7,7 +7,7 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 ## Características
 
 - Consulta datos de cualquier Pokémon desde `/pokemon/{nombre}`
-- Devuelve información limpia: nombre, especie, tipo(s), habilidades, ataques, estadísticas e imagen en base64
+- Devuelve información limpia: nombre, tipo(s), habilidades, ataques, estadísticas e imagen en base64
 - Guarda historial de búsquedas en base de datos H2
 - Documentación de la API con Swagger/OpenAPI
 - Contenedor Docker listo para desplegar
@@ -30,55 +30,35 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 ### Clona el proyecto
 
-```bash
+bash/terminal
 git clone https://github.com/tu_usuario/PokemonAPI.git
 cd PokemonAPI
 
-#Ejecutar con maven 
-./mvnw spring-boot:run
+### Ejecutar con maven 
+mvn spring-boot:run
 
-
-./mvnw clean package -DskipTests
+## Compilar y generar el contenerdor Docker
+mvn clean package 
 docker build -t pokemonapi:latest .
 docker run -p 8080:8080 pokemonapi:latest
-http://localhost:8080/swagger-ui.html
 
 
-
-
+## Para ingresar a Swagger
 http://localhost:8080/swagger-ui/index.html
 
 
-./mvnw test
-
-
+## Para poder ingresar a H2 Console DB
 http://localhost:8080/h2-console
 Configuración
 JDBC URL: jdbc:h2:mem:db
-
 Usuario: admin
-
 Contraseña: (vacío)
 
 
-
+## Ejemplo haciendo una solicitud con nombre pokemon = pikachu 
 
 GET http://localhost:8080/pokemon/pikachu
 
-ejeplo
-{
-  "nombre": "pikachu",
-  "especie": "pikachu",
-  "tipos": ["electric"],
-  "habilidades": ["static", "lightning-rod"],
-  "ataques": [...],
-  "estadisticas": {
-    "hp": 35,
-    "attack": 55,
-    ...
-  },
-  "imagenBase64": "iVBORw0KGgoAAAANSUhEUg..."
-}
 
 
 
