@@ -49,6 +49,7 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 
 ## Para poder ingresar a H2 Console DB
+![Imagen de consola h2](imagenes/consolah2busquedas.png)
 -http://localhost:8080/h2-console
 - Configuración
 - JDBC URL: jdbc:h2:mem:db
@@ -58,8 +59,8 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 ## Ejemplo haciendo una solicitud con nombre pokemon = pikachu 
 
-- GET http://localhost:8080/pokemon/pikachu
-
+- GET http://localhost:8080/api/v1/prueba/pokemon/bulbasaur
+![Imagen de consola h2](imagenes/ejemplo1.png)
 
 
 
