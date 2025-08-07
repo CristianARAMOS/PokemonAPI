@@ -36,11 +36,15 @@ API REST en Java 17 que consulta datos de Pokémon desde [PokeAPI](https://pokea
 
 ### Ejecutar con maven 
 - mvn spring-boot:run
+- 
+## Imagen desplegada en Docker Hub 
+- Para descargar la imagen directamente:  docker pull axcm1/apipokemon:1.0
 
-## Compilar y generar el contenerdor Docker
+## O Compilar y generar el contenerdor Docker
 - mvn clean package 
 - docker build -t pokemonapi:latest .
 - docker run -p 8080:8080 pokemonapi:latest
+
 
 
 ## Para ingresar a Swagger
